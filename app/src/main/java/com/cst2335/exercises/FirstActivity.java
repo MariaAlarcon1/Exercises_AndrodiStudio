@@ -13,9 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class FirstActivity extends AppCompatActivity {
 
-    public final static String TAG ="FirstActivity";
+    public final static String TAG ="FirstActivity"; //
 
-    public final static String PREFERENCES_FILE = "MyData";
+    public final static String PREFERENCES_FILE = "MyData"; //define a file named "MyData", stor4ed in a constant called preferences_file
 
     @Override     //first called
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +24,17 @@ public class FirstActivity extends AppCompatActivity {
         Log.i(TAG, "In onCreate, creating the objects");
         setContentView( R.layout.activity_main ); //loads XML on screen
 
+
         SharedPreferences prefs = getSharedPreferences(PREFERENCES_FILE, Context.MODE_PRIVATE);
         //Read preferences
-        String previous = prefs.getString("ReserveName", "Default Value");
-        TextView edit = findViewById(R.id.reserved_name);
-        edit.setText(previous);
+        String previous = prefs.getString("ReserveName", "Default Value"); // checks if there is any values in RESERVENAME, if does not find any data uses the default value
+        TextView edit = findViewById(R.id.reserved_name); //defining an object textView
+        edit.setText(previous); //display the data inside textview
 
         Button btn = findViewById(R.id.start_button);
         btn.setOnClickListener(  (  click ) ->
         {
-                                            //Where you are     //where we're going
+            //Where you are                //where we're going
             Intent nextPage = new Intent(FirstActivity.this,   SecondActivity.class  );
             //Make the transition:
             startActivity(nextPage);
