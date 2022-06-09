@@ -48,7 +48,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 elements.remove(i);
-                myAdapter.notifyDataSetChanged();
+                myAdapter.notifyDataSetChanged(); // to notify data has changed
             }
         });
 
