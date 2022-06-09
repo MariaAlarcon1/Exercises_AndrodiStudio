@@ -11,6 +11,14 @@
         android:layout_height="wrap_content"
         android:text="add"/>
 
+
+    <!--
+    type -> list view
+    layout-> width and height are the size of the device
+    id -> to make references of the list view
+
+    will display a layout (row_layout) inside another layout at runtime
+    -->
         <ListView
             android:id="@+id/theListView"
             android:layout_width="match_parent"

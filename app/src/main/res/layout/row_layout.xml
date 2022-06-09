@@ -3,10 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- goes inside the row inside the activity_main-->
     <TextView
         android:id="@+id/textGoesHere"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-
+    <!-- Can add another XMl element, it will be display inside the LitView-->
 </LinearLayout>

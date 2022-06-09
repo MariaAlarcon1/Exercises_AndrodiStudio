@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/activity_intent_examples.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/activity_shared_preferences_example.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/row_layout.xml" value="0.2463768115942029" />
         <entry key="app/src/main/res/layout/activity_camera.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_intent_examples.xml" value="0.1375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15" />
@@ -11,7 +15,6 @@
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_shared_preferences_example.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_some.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/row_layout.xml" value="0.2076388888888889" />
       </map>
     </option>
   </component>
