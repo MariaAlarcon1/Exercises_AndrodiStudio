@@ -30,7 +30,7 @@ public class FirstActivity extends AppCompatActivity {
 
         adapter = new ArrayAdapter<>( this,
                 android.R.layout.simple_dropdown_item_1line,
-                listItems);
+                listItems); // simple_dropdown_item_1line --> display static items
 
         myListView.setAdapter(adapter);
 
@@ -41,6 +41,9 @@ public class FirstActivity extends AppCompatActivity {
                     .setAction("Action", null).show();
         };
 
+        /*
+        to create an event listener to add data
+         */
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> {
             addListItem();
