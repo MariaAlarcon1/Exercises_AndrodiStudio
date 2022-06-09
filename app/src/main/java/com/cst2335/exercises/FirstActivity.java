@@ -41,7 +41,11 @@ public class FirstActivity extends AppCompatActivity {
 
         submit = findViewById(R.id.submitButton);
         edit = findViewById(R.id.editText);
-        rView = findViewById(R.id.myRecycleView);
+
+        /*
+         * needs and adapter
+         */
+        rView = findViewById(R.id.myRecycleView); //RECYCLERVIEW
 
         theAdapter = new MyAdapter();
         rView.setAdapter( theAdapter ) ;
