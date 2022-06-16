@@ -15,13 +15,17 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     public static final String COL_SEND_RECEIVE = "SendOrReceive";
     public static final String COL_TIME_SENT = "TimeSent";
 
+    //Constructor -->
     public MyOpenHelper(Context context) {
         super(context, filename, null, version);
     }
 
     // should be the creation statement
+    //Check if the DB already exists
+    //Checks the version to update
     @Override
     public void onCreate(SQLiteDatabase db) {
+
         //Create table MyData ( _id INTEGER PRIMARY KEY AUTOINCREMENT, Message TEXT, SendOrReceive INTEGER, TimeSent TEXT );
         String result = String.format(" %s %s %s", "FirstString" , "10", "10.0" );
 
@@ -35,7 +39,6 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL( "Drop table if exists " + TABLE_NAME ); //deletes the current data
         //create a new table:
-
         this.onCreate(db); //calls function on line 26
     }
 }
