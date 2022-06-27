@@ -52,9 +52,6 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
 
-
-
-
     }
 
     private class MyListAdapter extends BaseAdapter {
