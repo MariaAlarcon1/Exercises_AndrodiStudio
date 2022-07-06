@@ -46,7 +46,8 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //initialize it in onCreate
-        myOpener = new MyOpenHelper( this );
+        myOpener = new MyOpenHelper( this.edit.getContext() );
+
         //open the database:
         theDatabase = myOpener.getWritableDatabase();
 
@@ -76,7 +77,7 @@ public class FirstActivity extends AppCompatActivity {
 
         theAdapter = new MyAdapter();
         rView.setAdapter( theAdapter ) ;
-        rView.setLayoutManager(new LinearLayoutManager(this));
+        rView.setLayoutManager(new LinearLayoutManager(this.edit.getContext()));
 
         submit.setOnClickListener( click ->{
             String whatIsTyped = edit.getText().toString();
@@ -182,7 +183,7 @@ public class FirstActivity extends AppCompatActivity {
                 int position = getAdapterPosition();//which row was clicked.
                 Message whatWasClicked = messages.get(position);
 
-                AlertDialog.Builder builder = new AlertDialog.Builder( FirstActivity.this );
+                AlertDialog.Builder builder = new AlertDialog.Builder( FirstActivity.this. );
 
                 builder.setTitle("Question:")
                         .setMessage("Do you want to delete this:" + whatWasClicked.getMessageTyped())
