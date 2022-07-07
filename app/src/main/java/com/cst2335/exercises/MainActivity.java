@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity  implements MessageListFragm
         args.putInt("position", position);
         secondFragment.setArguments(args); // (1) Communicate with Fragment using Bundle
 
+
         //if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
         if (isTablet)  {
             getSupportFragmentManager()
@@ -62,12 +63,12 @@ public class MainActivity extends AppCompatActivity  implements MessageListFragm
                     .setReorderingAllowed(true)
                     .replace(R.id.flContainer2, secondFragment)
                     .commit();
-        }else{
+        }else{ //PHONE
             getSupportFragmentManager()
                     .beginTransaction()
                     .setReorderingAllowed(true)
                     .replace(R.id.flContainer1, secondFragment)
-                    .addToBackStack(null)
+                    .addToBackStack(null) //ADD TO BACKSTACK: slide 23
                     .commit();
         }
     }
