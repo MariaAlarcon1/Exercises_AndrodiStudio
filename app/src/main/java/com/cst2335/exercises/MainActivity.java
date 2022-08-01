@@ -42,13 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
                 XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
                 factory.setNamespaceAware(false);
-                XmlPullParser xpp = factory.newPullParser();
+                XmlPullParser xpp = factory.newPullParser(); // input stream
                 xpp.setInput( response  , "UTF-8");
 
 
                 String parameter = null;
 
                 int eventType = xpp.getEventType(); //The parser is currently at START_DOCUMENT
+                // to inspect each element
 
                 while(eventType != XmlPullParser.END_DOCUMENT)
                 {

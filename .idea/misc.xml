@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/activity_main.xml" value="0.12681159420289856" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/activity_menu_example.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/activity_some.xml" value="0.1" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/header_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/layout/layout_toolbar.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/menu/drawer_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/maria/AndroidStudioProjects/Exercises_AndrodiStudio/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/activity_camera.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_intent_examples.xml" value="0.1375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15" />
