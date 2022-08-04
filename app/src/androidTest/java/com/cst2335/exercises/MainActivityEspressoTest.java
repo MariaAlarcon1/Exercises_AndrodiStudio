@@ -62,6 +62,7 @@ public class MainActivityEspressoTest {
     @Test
     public void ensureInitialForm_OK() {
         ViewInteraction textView = onView(
+                //call multiple condition --> allOf
                 allOf(withId(R.id.enterEmailId), withText("Enter Email"),
                         withParent(withParent(withId(R.id.flContainer))),
                         isDisplayed()));
