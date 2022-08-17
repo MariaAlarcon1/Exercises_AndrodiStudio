@@ -13,11 +13,11 @@ import org.junit.Test;
 public class EmailValidatorTest {
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() throws Exception { // occurs before every test
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() throws Exception { //occurs after every test
     }
 
 
